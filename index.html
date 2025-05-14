@@ -3,127 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bespoke Babystore (BBS) - Premium Baby Bottles</title>
-    <meta name="description" content="Premium baby bottles and feeding accessories designed for comfort and safety. Let us grow your baby.">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/home.css">
+    <title>Bespoke Babystore (BBS) - Let us grow your baby</title>
+    <meta name="description" content="Premium baby bottles and accessories for your little one">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
+    <header>
         <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="Bespoke Babystore Logo">
-                        <div class="logo-text">
-                            <h1>Bespoke Babystore</h1>
-                            <p>Let us grow your baby</p>
-                        </div>
-                    </a>
-                </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                    </ul>
-                </nav>
-                <div class="header-actions">
-                    <a href="cart.html" class="cart-icon">
-                        <img src="images/cart-icon.svg" alt="Shopping Cart">
-                        <span class="cart-count">0</span>
-                    </a>
-                    <button class="mobile-menu-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+            <div class="logo">
+                <img src="logo.png" alt="Bespoke Babystore Logo">
+                <div class="brand-text">
+                    <h1>Bespoke Babystore</h1>
+                    <p class="slogan">Let us grow your baby</p>
                 </div>
             </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <a href="#" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="cart.html">Cart</a></li>
-        </ul>
-    </div>
-
-    <!-- Main Content -->
     <main>
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-text">
-                        <h2>The Perfect Bottles for Your Little One</h2>
-                        <p>Designed with love, made for comfort. Give your baby the best start in life.</p>
-                        <div class="hero-buttons">
-                            <a href="products.html" class="btn btn-primary">Shop Now</a>
-                            <a href="about.html" class="btn btn-outline">Learn More</a>
-                        </div>
+                    <h2>Premium Baby Bottles for Your Little One</h2>
+                    <p>Designed with love, made with care. Our bottles provide the best feeding experience for your baby.</p>
+                    <div class="cta-buttons">
+                        <a href="products.html" class="btn primary-btn">Shop Now</a>
+                        <a href="about.html" class="btn secondary-btn">Learn More</a>
                     </div>
-                    <div class="hero-image">
-                        <img src="images/hero-bottle.png" alt="Premium baby bottles">
-                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="hero-image.jpg" alt="Baby with bottle">
                 </div>
             </div>
         </section>
 
-        <!-- Brand Introduction -->
-        <section class="brand-intro">
+        <!-- Introduction Section -->
+        <section class="intro">
             <div class="container">
                 <h2>Welcome to Bespoke Babystore</h2>
-                <p class="section-intro">
-                    At BBS, we believe every baby deserves the best. Our premium bottles are designed to make feeding time
-                    comfortable, safe, and enjoyable for both babies and parents.
-                </p>
+                <p>At BBS, we believe that every baby deserves the best start in life. Our premium baby bottles are designed to mimic the natural breastfeeding experience, making the transition between breast and bottle seamless.</p>
                 <div class="features">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <img src="images/icon-safe.svg" alt="Safe Materials">
-                        </div>
+                    <div class="feature">
+                        <img src="feature-1.jpg" alt="Safe Materials">
                         <h3>Safe Materials</h3>
-                        <p>BPA-free and made from the highest quality materials</p>
+                        <p>BPA-free, phthalate-free materials that are safe for your baby.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <img src="images/icon-comfort.svg" alt="Comfort Design">
-                        </div>
-                        <h3>Comfort Design</h3>
-                        <p>Ergonomic shape for easy holding by babies and parents</p>
+                    <div class="feature">
+                        <img src="feature-2.jpg" alt="Anti-Colic Design">
+                        <h3>Anti-Colic Design</h3>
+                        <p>Innovative venting system reduces air intake and helps prevent colic.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <img src="images/icon-colic.svg" alt="Anti-Colic">
-                        </div>
-                        <h3>Anti-Colic</h3>
-                        <p>Special venting system to reduce air intake and colic</p>
+                    <div class="feature">
+                        <img src="feature-3.jpg" alt="Easy to Clean">
+                        <h3>Easy to Clean</h3>
+                        <p>Simple design with minimal parts for easy cleaning and sterilization.</p>
                     </div>
                 </div>
-                <p class="slogan">"Let us grow your baby"</p>
             </div>
         </section>
 
-        <!-- Best Sellers -->
-        <section class="best-sellers">
+        <!-- Featured Products -->
+        <section class="featured-products">
             <div class="container">
                 <h2>Our Best Sellers</h2>
-                <p class="section-intro">Loved by parents and babies everywhere</p>
-                <div class="products-grid" id="best-sellers-container">
-                    <!-- Products will be loaded here via JavaScript -->
+                <div class="product-grid">
+                    <!-- Products will be loaded dynamically from JavaScript -->
                 </div>
-                <div class="center-button">
-                    <a href="products.html" class="btn btn-primary">View All Products</a>
+                <div class="center-btn">
+                    <a href="products.html" class="btn primary-btn">View All Products</a>
                 </div>
             </div>
         </section>
@@ -132,118 +103,90 @@
         <section class="testimonials">
             <div class="container">
                 <h2>What Parents Say</h2>
-                <p class="section-intro">Hear from our happy customers</p>
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="stars">
-                            <img src="images/star.svg" alt="Star">
-                            <img src="images/star.svg" alt="Star">
-                            <img src="images/star.svg" alt="Star">
-                            <img src="images/star.svg" alt="Star">
-                            <img src="images/star.svg" alt="Star">
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <p>"These bottles have been a game-changer for us. My baby took to them immediately, and the anti-colic feature really works!"</p>
+                        <div class="testimonial-author">
+                            <img src="mom1.jpg" alt="Happy Mom">
+                            <p>Sarah M., Mother of 2</p>
                         </div>
-                        <p class="testimonial-text">
-                            "These bottles have been a game-changer for us. My baby loves them and the anti-colic feature really
-                            works!"
-                        </p>
-                        <p class="testimonial-author">- Sarah M., Mother of two</p>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="stars">
-                            <img src="images/star.svg" alt="Star">
-                            <img src="images/star.svg" alt="Star">
-                            <img src="images/star.svg" alt="Star">
-                            <img src="images/star.svg" alt="Star">
-                            <img src="images/star.svg" alt="Star">
+                    <div class="testimonial">
+                        <p>"I love how easy these bottles are to clean. No more spending hours washing tiny parts!"</p>
+                        <div class="testimonial-author">
+                            <img src="dad1.jpg" alt="Happy Dad">
+                            <p>John D., Father of 1</p>
                         </div>
-                        <p class="testimonial-text">
-                            "The quality is exceptional. Easy to clean and my baby transitioned to these bottles with no issues at
-                            all."
-                        </p>
-                        <p class="testimonial-author">- James K., First-time dad</p>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="stars">
-                            <img src="images/star.svg" alt="Star">
-                            <img src="images/star.svg" alt="Star">
-                            <img src="images/star.svg" alt="Star">
-                            <img src="images/star.svg" alt="Star">
-                            <img src="images/star.svg" alt="Star">
+                    <div class="testimonial">
+                        <p>"The quality is outstanding. We've tried many bottles, but these are by far the best."</p>
+                        <div class="testimonial-author">
+                            <img src="mom2.jpg" alt="Happy Mom">
+                            <p>Emily K., Mother of 3</p>
                         </div>
-                        <p class="testimonial-text">
-                            "I've tried many bottles, but BBS bottles are by far the best. The customer service is also
-                            outstanding!"
-                        </p>
-                        <p class="testimonial-author">- Emily T., Mother of twins</p>
                     </div>
+                </div>
+                <div class="slider-controls">
+                    <button id="prev-testimonial" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next-testimonial" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div id="cart-total">
+                <p>Total: <span id="total-amount">$0.00</span></p>
+            </div>
+            <button id="checkout-btn" class="btn primary-btn">Proceed to Checkout</button>
+            <button id="continue-shopping" class="btn secondary-btn">Continue Shopping</button>
+        </div>
+    </div>
+
+    <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <div class="footer-logo">
-                        <img src="images/logo.png" alt="Bespoke Babystore Logo">
-                        <h3>Bespoke Babystore</h3>
-                    </div>
-                    <p>Premium baby bottles and feeding accessories designed for comfort and safety.</p>
-                    <p class="slogan">"Let us grow your baby"</p>
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Bespoke Babystore Logo">
+                    <p>Bespoke Babystore (BBS)</p>
+                    <p class="slogan">Let us grow your baby</p>
                 </div>
-                <div class="footer-column">
+                <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="cart.html">Cart</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
+                <div class="footer-contact">
                     <h3>Contact Us</h3>
-                    <ul class="contact-info">
-                        <li>
-                            <img src="images/icon-phone.svg" alt="Phone">
-                            <div>
-                                <p>+256 784 973404</p>
-                                <p>+256 783 468608</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/icon-email.svg" alt="Email">
-                            <p>info@bespokebabystore.com</p>
-                        </li>
-                        <li>
-                            <img src="images/icon-location.svg" alt="Location">
-                            <p>123 Baby Lane, Kampala, Uganda</p>
-                        </li>
-                    </ul>
+                    <p><i class="fas fa-phone"></i> +256784973404</p>
+                    <p><i class="fas fa-phone"></i> +256783468608</p>
+                    <p><i class="fas fa-envelope"></i> info@bespokebabystore.com</p>
                 </div>
-                <div class="footer-column">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to our newsletter for the latest products and offers.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> Bespoke Babystore (BBS). All rights reserved.</p>
-                <div class="social-icons">
-                    <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
-                    <a href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a>
-                    <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
-                </div>
+                <p>&copy; 2025 Bespoke Babystore. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/products.js"></script>
-    <script src="js/cart.js"></script>
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
-    </html>
+        </html>
