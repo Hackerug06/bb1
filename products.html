@@ -3,160 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | Bespoke Babystore (BBS)</title>
-    <meta name="description" content="Browse our premium collection of baby bottles and accessories. Let us grow your baby.">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/products.css">
+    <title>Products - Bespoke Babystore (BBS)</title>
+    <meta name="description" content="Browse our premium baby bottles and accessories">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
+    <header>
         <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="Bespoke Babystore Logo">
-                        <div class="logo-text">
-                            <h1>Bespoke Babystore</h1>
-                            <p>Let us grow your baby</p>
-                        </div>
-                    </a>
-                </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html" class="active">Products</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                    </ul>
-                </nav>
-                <div class="header-actions">
-                    <a href="cart.html" class="cart-icon">
-                        <img src="images/cart-icon.svg" alt="Shopping Cart">
-                        <span class="cart-count">0</span>
-                    </a>
-                    <button class="mobile-menu-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+            <div class="logo">
+                <img src="logo.png" alt="Bespoke Babystore Logo">
+                <div class="brand-text">
+                    <h1>Bespoke Babystore</h1>
+                    <p class="slogan">Let us grow your baby</p>
                 </div>
             </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <a href="#" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="cart.html">Cart</a></li>
-        </ul>
-    </div>
-
-    <!-- Main Content -->
     <main>
-        <!-- Products Header -->
         <section class="page-header">
             <div class="container">
-                <h2>Our Products</h2>
-                <p>Discover our premium collection of baby bottles and accessories, designed with love and care for your little one.</p>
+                <h1>Our Products</h1>
+                <p>Discover our range of premium baby bottles and accessories</p>
             </div>
         </section>
 
-        <!-- Products Section -->
-        <section class="products-section">
+        <section class="product-filters">
             <div class="container">
-                <div class="product-filters">
-                    <button class="filter-btn active" data-category="all">All Products</button>
-                    <button class="filter-btn" data-category="Bottles">Bottles</button>
-                    <button class="filter-btn" data-category="Accessories">Accessories</button>
-                    <button class="filter-btn" data-category="Sets">Sets</button>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label for="category-filter">Category:</label>
+                        <select id="category-filter">
+                            <option value="all">All Products</option>
+                            <option value="bottles">Bottles</option>
+                            <option value="nipples">Nipples</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="sort-by">Sort By:</label>
+                        <select id="sort-by">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="products-grid" id="products-container">
-                    <!-- Products will be loaded here via JavaScript -->
+            </div>
+        </section>
+
+        <section class="products-list">
+            <div class="container">
+                <div class="product-grid" id="products-container">
+                    <!-- Products will be loaded dynamically from JavaScript -->
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content product-detail-modal">
+            <span class="close">&times;</span>
+            <div id="product-detail-content">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div id="cart-total">
+                <p>Total: <span id="total-amount">$0.00</span></p>
+            </div>
+            <button id="checkout-btn" class="btn primary-btn">Proceed to Checkout</button>
+            <button id="continue-shopping" class="btn secondary-btn">Continue Shopping</button>
+        </div>
+    </div>
+
+    <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <div class="footer-logo">
-                        <img src="images/logo.png" alt="Bespoke Babystore Logo">
-                        <h3>Bespoke Babystore</h3>
-                    </div>
-                    <p>Premium baby bottles and feeding accessories designed for comfort and safety.</p>
-                    <p class="slogan">"Let us grow your baby"</p>
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Bespoke Babystore Logo">
+                    <p>Bespoke Babystore (BBS)</p>
+                    <p class="slogan">Let us grow your baby</p>
                 </div>
-                <div class="footer-column">
+                <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="cart.html">Cart</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
+                <div class="footer-contact">
                     <h3>Contact Us</h3>
-                    <ul class="contact-info">
-                        <li>
-                            <img src="images/icon-phone.svg" alt="Phone">
-                            <div>
-                                <p>+256 784 973404</p>
-                                <p>+256 783 468608</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/icon-email.svg" alt="Email">
-                            <p>info@bespokebabystore.com</p>
-                        </li>
-                        <li>
-                            <img src="images/icon-location.svg" alt="Location">
-                            <p>123 Baby Lane, Kampala, Uganda</p>
-                        </li>
-                    </ul>
+                    <p><i class="fas fa-phone"></i> +256784973404</p>
+                    <p><i class="fas fa-phone"></i> +256783468608</p>
+                    <p><i class="fas fa-envelope"></i> info@bespokebabystore.com</p>
                 </div>
-                <div class="footer-column">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to our newsletter for the latest products and offers.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> Bespoke Babystore (BBS). All rights reserved.</p>
-                <div class="social-icons">
-                    <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
-                    <a href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a>
-                    <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
-                </div>
+                <p>&copy; 2025 Bespoke Babystore. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Product Modal -->
-    <div class="product-modal" id="product-modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div class="modal-body" id="modal-body">
-                <!-- Product details will be loaded here via JavaScript -->
-            </div>
-        </div>
-    </div>
-
-    <script src="js/products.js"></script>
-    <script src="js/cart.js"></script>
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+                </html>
