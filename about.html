@@ -3,267 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Bespoke Babystore (BBS)</title>
-    <meta name="description" content="Learn about our brand story, mission, and contact information. Let us grow your baby.">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/about.css">
+    <title>About Us - Bespoke Babystore (BBS)</title>
+    <meta name="description" content="Learn about Bespoke Babystore and our mission">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
+    <header>
         <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="Bespoke Babystore Logo">
-                        <div class="logo-text">
-                            <h1>Bespoke Babystore</h1>
-                            <p>Let us grow your baby</p>
-                        </div>
-                    </a>
-                </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html" class="active">About Us</a></li>
-                    </ul>
-                </nav>
-                <div class="header-actions">
-                    <a href="cart.html" class="cart-icon">
-                        <img src="images/cart-icon.svg" alt="Shopping Cart">
-                        <span class="cart-count">0</span>
-                    </a>
-                    <button class="mobile-menu-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+            <div class="logo">
+                <img src="logo.png" alt="Bespoke Babystore Logo">
+                <div class="brand-text">
+                    <h1>Bespoke Babystore</h1>
+                    <p class="slogan">Let us grow your baby</p>
                 </div>
             </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <a href="#" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="cart.html">Cart</a></li>
-        </ul>
-    </div>
-
-    <!-- Main Content -->
     <main>
-        <!-- About Header -->
         <section class="page-header">
             <div class="container">
-                <h2>About Us</h2>
-                <p>Get to know Bespoke Babystore and our mission to provide the best for your baby.</p>
+                <h1>About Us</h1>
+                <p>Our story, mission, and commitment to your baby's health</p>
             </div>
         </section>
 
-        <!-- Brand Story -->
-        <section class="brand-story">
+        <section class="about-story">
             <div class="container">
-                <div class="story-content">
-                    <div class="story-text">
-                        <h2>Our Story</h2>
-                        <p>
-                            Bespoke Babystore (BBS) was founded in 2018 by a group of parents who were frustrated with the baby
-                            bottles available on the market. They found that many bottles caused discomfort for their babies,
-                            leading to feeding difficulties and colic.
-                        </p>
-                        <p>
-                            After extensive research and development, working with pediatricians and baby feeding specialists, we
-                            created our first line of anti-colic bottles. The response was overwhelming, with parents reporting
-                            happier babies and easier feeding times.
-                        </p>
-                        <p>
-                            Today, we've expanded our product line to include a variety of bottles and feeding accessories, all
-                            designed with the same commitment to baby comfort and parent convenience.
-                        </p>
-                        <p class="slogan">"Let us grow your baby"</p>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="about-image.jpg" alt="Founder with baby">
                     </div>
-                    <div class="story-image">
-                        <img src="images/about-us.jpg" alt="Bespoke Babystore team">
+                    <div class="about-text">
+                        <h2>Our Story</h2>
+                        <p>Bespoke Babystore (BBS) was founded in 2020 by a group of parents who were frustrated with the baby bottles available on the market. They found that many bottles caused colic, were difficult to clean, or used materials they weren't comfortable with.</p>
+                        <p>After extensive research and development, we created our first bottle design that addressed these concerns. Our bottles quickly gained popularity among parents who appreciated our commitment to quality, safety, and functionality.</p>
+                        <p>Today, we continue to innovate and expand our product line, always keeping the health and comfort of babies and the convenience for parents at the forefront of our designs.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Mission -->
         <section class="mission">
             <div class="container">
                 <h2>Our Mission</h2>
-                <p class="section-intro">
-                    At Bespoke Babystore, our mission is simple: to make feeding time comfortable, safe, and enjoyable for both
-                    babies and parents. We believe that every baby deserves the best start in life, and that begins with quality
-                    feeding products.
-                </p>
-                <div class="mission-values">
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <img src="images/icon-quality.svg" alt="Quality First">
-                        </div>
-                        <h3>Quality First</h3>
-                        <p>We use only the highest quality, safest materials in all our products, exceeding safety standards.</p>
+                <p>At Bespoke Babystore, our mission is simple: to provide the highest quality baby feeding products that make life easier for parents and healthier for babies. We believe that every baby deserves the best start in life, and that begins with safe, comfortable feeding experiences.</p>
+                <div class="values">
+                    <div class="value">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safety First</h3>
+                        <p>We use only the safest materials and rigorous testing processes.</p>
                     </div>
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <img src="images/icon-innovation.svg" alt="Innovation">
-                        </div>
-                        <h3>Innovation</h3>
-                        <p>We continuously research and develop new solutions to common feeding problems.</p>
+                    <div class="value">
+                        <i class="fas fa-heart"></i>
+                        <h3>Baby Comfort</h3>
+                        <p>Our designs prioritize your baby's comfort and health.</p>
                     </div>
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <img src="images/icon-education.svg" alt="Education">
-                        </div>
-                        <h3>Education</h3>
-                        <p>We provide resources and support to help parents navigate feeding challenges.</p>
+                    <div class="value">
+                        <i class="fas fa-recycle"></i>
+                        <h3>Sustainability</h3>
+                        <p>We're committed to environmentally responsible practices.</p>
+                    </div>
+                    <div class="value">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Parent Support</h3>
+                        <p>We provide resources and support for new parents.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Information -->
-        <section class="contact-section">
+        <section class="contact-info">
             <div class="container">
                 <h2>Contact Us</h2>
-                <div class="contact-content">
-                    <div class="contact-info-card">
-                        <h3>Get In Touch</h3>
-                        <ul class="contact-details">
-                            <li>
-                                <img src="images/icon-phone.svg" alt="Phone">
-                                <div>
-                                    <h4>Phone</h4>
-                                    <p>+256 784 973404</p>
-                                    <p>+256 783 468608</p>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="images/icon-email.svg" alt="Email">
-                                <div>
-                                    <h4>Email</h4>
-                                    <p>info@bespokebabystore.com</p>
-                                </div>
-                            </li>
-                            <li>
-                                <img src="images/icon-location.svg" alt="Address">
-                                <div>
-                                    <h4>Address</h4>
-                                    <p>123 Baby Lane</p>
-                                    <p>Kampala, Uganda</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="social-links">
-                            <h4>Follow Us</h4>
-                            <div class="social-icons">
-                                <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
-                                <a href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a>
-                                <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
-                            </div>
+                <p>We'd love to hear from you! Whether you have questions about our products, need assistance with an order, or want to share your feedback, our team is here to help.</p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Phone</h3>
+                        <p>+256784973404</p>
+                        <p>+256783468608</p>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>info@bespokebabystore.com</p>
+                        <p>support@bespokebabystore.com</p>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Kampala, Uganda</p>
+                        <p>East Africa</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
-                    </div>
-                    <div class="contact-form-container">
-                        <h3>Send Us a Message</h3>
-                        <form class="contact-form" id="contact-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div id="cart-total">
+                <p>Total: <span id="total-amount">$0.00</span></p>
+            </div>
+            <button id="checkout-btn" class="btn primary-btn">Proceed to Checkout</button>
+            <button id="continue-shopping" class="btn secondary-btn">Continue Shopping</button>
+        </div>
+    </div>
+
+    <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <div class="footer-logo">
-                        <img src="images/logo.png" alt="Bespoke Babystore Logo">
-                        <h3>Bespoke Babystore</h3>
-                    </div>
-                    <p>Premium baby bottles and feeding accessories designed for comfort and safety.</p>
-                    <p class="slogan">"Let us grow your baby"</p>
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Bespoke Babystore Logo">
+                    <p>Bespoke Babystore (BBS)</p>
+                    <p class="slogan">Let us grow your baby</p>
                 </div>
-                <div class="footer-column">
+                <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="cart.html">Cart</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
+                <div class="footer-contact">
                     <h3>Contact Us</h3>
-                    <ul class="contact-info">
-                        <li>
-                            <img src="images/icon-phone.svg" alt="Phone">
-                            <div>
-                                <p>+256 784 973404</p>
-                                <p>+256 783 468608</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/icon-email.svg" alt="Email">
-                            <p>info@bespokebabystore.com</p>
-                        </li>
-                        <li>
-                            <img src="images/icon-location.svg" alt="Location">
-                            <p>123 Baby Lane, Kampala, Uganda</p>
-                        </li>
-                    </ul>
+                    <p><i class="fas fa-phone"></i> +256784973404</p>
+                    <p><i class="fas fa-phone"></i> +256783468608</p>
+                    <p><i class="fas fa-envelope"></i> info@bespokebabystore.com</p>
                 </div>
-                <div class="footer-column">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to our newsletter for the latest products and offers.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> Bespoke Babystore (BBS). All rights reserved.</p>
-                <div class="social-icons">
-                    <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
-                    <a href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a>
-                    <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
-                </div>
+                <p>&copy; 2025 Bespoke Babystore. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/cart.js"></script>
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
-  </html>
+                                </html>
